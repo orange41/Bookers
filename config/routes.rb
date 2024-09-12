@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
-  get 'top' => 'homes#top'
-  resources :books
-  end
+  root 'books#top'
+  get '/', to: redirect('/top')  
+  resources :books, only: [:index, :create, :show, :edit, :update, :destroy]
+end

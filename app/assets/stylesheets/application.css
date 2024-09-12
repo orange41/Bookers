@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+.books-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px; 
+}
+
+.book-info {
+  flex-grow: 1;
+}
+
+.title, .body {
+  display: inline-block;
+}
+
+.actions {
+  white-space: nowrap;
+}
+
+.action-link {
+  margin-right: 10px; 
+}
